@@ -1,3 +1,4 @@
+import { Container } from "@/components/Container";
 import { DateDisplay } from "@/components/DateDisplay";
 import RenderComponent from "@/components/RenderComponent";
 import { getPostBySlug } from "@/lib/getPostsInfo";
@@ -14,13 +15,12 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <>
-      <div className="container flex max-w-4xl w-full px-8 md:px-12 md:py-10">
+      <Container>
         {post.component ? (
           <RenderComponent componentName={post.component} />
         ) : (
           <main>
-            <div className="w-full text-black">
+            <div className="w-full text-black mb-12">
               <div className="flex flex-col mb-8">
                 <div className="font-bold md:text-3xl lg:text-4xl md:leading-tight text-2xl">
                   {post.title}
@@ -35,7 +35,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
             </div>
           </main>
         )}
-      </div>
-    </>
+      </Container>
   );
 }

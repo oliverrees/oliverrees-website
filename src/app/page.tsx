@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { getPosts } from "../lib/getPosts";
-import RenderComponent from "@/components/RenderComponent";
 import { getAllPosts } from "@/lib/getPostsInfo";
 import { Post } from "@/components/Post";
 
