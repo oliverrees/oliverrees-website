@@ -3,12 +3,12 @@ import { Container } from "@/components/Container";
 const Contact = ({}) => {
   return (
     <Container maxWidth="w-full">
-      <div className="grid w-full md:gap-10 mb-4 grid-cols-1 gap-5">
+      <div className="grid w-full md:gap-5 mb-4 grid-cols-1 gap-5">
         <div>
           <a
             target="new"
             href="https://twitter.com/oliver_rees"
-            className="flex justify-center flex-col items-center hover:text-gray-400 border p-12 "
+            className="flex justify-center flex-col items-center md:hover:text-blue-700 border p-12 "
           >
             <svg
               className="h-6 w-6  mb-2"
@@ -25,7 +25,7 @@ const Contact = ({}) => {
           <a
             target="new"
             href="http://linkedin.com/in/reesoliver"
-            className="flex justify-center flex-col items-center hover:text-gray-400 border p-12"
+            className="flex justify-center flex-col items-center md:hover:text-blue-700 border p-12"
           >
             <svg
               fill="currentColor"
@@ -41,7 +41,7 @@ const Contact = ({}) => {
           <a
             target="new"
             href="mailto:hello@oliverrees.co.uk"
-            className="flex justify-center flex-col items-center hover:text-gray-400 border p-12"
+            className="flex justify-center flex-col items-center md:hover:text-blue-700 border p-12"
           >
             <svg
               className="h-6 w-6 mb-2"

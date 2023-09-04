@@ -2,8 +2,9 @@
 title: Desire can lead us out of climate catastrophe
 type: post
 date: 2021-09-13T00:00:00Z
-image: earth.jpg
 ---
+
+![Earth](/img/posts/earth.jpg)
 
 Limitless desire. Humanity’s greatest gift, and it’s greatest curse. Our desire for better, more, in perpetuity, has allowed the human race to achieve extraordinary things. Yet this insatiable thirst is now the single biggest challenge to our continued existence on Earth. As the global middle class swells, the desire for things as markers of success, comfort and status accelerates every day.
 
@@ -27,7 +28,7 @@ Non-fungible tokens (NFTs) go some way to harness this idea; but they are proble
 
 Free to play games, on the other hand, give an indication of what might be possible. At first it seems counter intuitive that some of the most profitable games in existence today are free. Call of Duty's Warzone, a battle royale first person shooter, for example, makes £1.3 billion every year.
 
-![Alt text](/img/wz.jpg)
+![Warzone](/img/posts/wz.jpg)
 
 People buy extra in-game skins, weapons and extras not because they expect them to rise in value. They aren't tradeable. They offer no real performance improvement. Yet they're coveted and desired just as much as physical goods. So why do people buy them? Because once you're the participant of a world with meaning and stories, that world becomes real. Once a digital world has become real through some sort of meaning making, purchases make economic sense and the virtual becomes physical.
 

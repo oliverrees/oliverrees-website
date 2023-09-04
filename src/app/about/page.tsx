@@ -18,7 +18,7 @@ const About = ({}) => {
           <a
             href="https://or-innovation.com"
             target="new"
-            className="underline"
+            className="underline md:hover:text-blue-700"
           >
             OR/innovation
           </a>

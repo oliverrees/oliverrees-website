@@ -17,15 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/img/fav.png" />
-      </head>
       <body className={inter.className}>
-        <div className="lg:w-96 md:w-48 h-28 md:h-auto fixed flex md:items-start md:min-h-screen  bg-white w-full md:flex-col border-b md:border-b-0 md:border-r justify-between">
-          <Link
-            href="/"
-            className="md:hover:bg-black md:hover:text-white md:h-48 lg:h-96 "
-          >
+        <div className="lg:w-96 md:w-48 h-28 md:h-auto fixed flex md:items-start md:min-h-screen bg-white w-full md:flex-col  justify-between">
+          <Link href="/" className=" md:hover:text-blue-700 md:h-48 lg:h-96 ">
             <div className="text-2xl ml-8 md:text-4xl lg:text-8xl md:-mt-4 lg:-mt-8 md:ml-10 flex items-center justify-center h-full lg:ml-12 md:-rotate-45">
               Oliver Rees
             </div>
