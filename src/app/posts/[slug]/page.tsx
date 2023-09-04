@@ -15,26 +15,26 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-      <Container>
-        {post.component ? (
-          <RenderComponent componentName={post.component} />
-        ) : (
-          <main>
-            <div className="w-full text-black mb-12">
-              <div className="flex flex-col mb-8">
-                <div className="font-bold md:text-3xl lg:text-4xl md:leading-tight text-2xl">
-                  {post.title}
-                </div>
-                <DateDisplay date={post.date} />
+    <Container>
+      {post.component ? (
+        <RenderComponent componentName={post.component} />
+      ) : (
+        <main>
+          <div className="w-full mb-12">
+            <div className="flex flex-col mb-8">
+              <div className="font-bold md:text-3xl lg:text-4xl md:leading-tight text-2xl">
+                {post.title}
               </div>
-
-              <div
-                className="prose lg:prose-lg max-w-4xl"
-                dangerouslySetInnerHTML={{ __html: content }}
-              ></div>
+              <DateDisplay date={post.date} />
             </div>
-          </main>
-        )}
-      </Container>
+
+            <div
+              className="prose lg:prose-lg max-w-4xl dark:text-white"
+              dangerouslySetInnerHTML={{ __html: content }}
+            ></div>
+          </div>
+        </main>
+      )}
+    </Container>
   );
 }

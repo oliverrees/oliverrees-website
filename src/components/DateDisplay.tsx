@@ -1,4 +1,4 @@
-import { format } from 'date-fns'
+import { format } from "date-fns";
 
 interface DateProps {
   date: string;
@@ -8,8 +8,8 @@ interface DateProps {
 export const DateDisplay = ({ date, className }: DateProps) => {
   const parsedDate = new Date(date);
   return (
-    <div className={"text-gray-400 text-sm mt-2 " + className}>
-      {format(parsedDate, 'MM/dd/yyyy')}
+    <div className={"text-gray-400 text-sm mt-2 dark:text-white " + className}>
+      {format(parsedDate, "MM/dd/yyyy")}
     </div>
   );
 };

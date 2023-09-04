@@ -10,7 +10,7 @@ export const Container = ({ children, maxWidth }: ContainerProps) => {
     <div
       className={classNames(
         maxWidth ? maxWidth : "max-w-4xl",
-        "container flex w-full px-8 md:px-12 md:py-10"
+        "container flex w-full px-8 md:px-12 md:py-10 dark:text-white"
       )}
     >
       {children}
