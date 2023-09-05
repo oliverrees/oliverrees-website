@@ -1,17 +1,17 @@
 import { getAllPosts } from "@/lib/getPostsInfo";
-import { Post } from "@/components/Post";
-interface Article {
-  [key: string]: string;
-}
+import { PostLink } from "@/components/PostLink";
+import { Post } from "@/lib/postType";
 
 export default function Home() {
-  const posts: Article[] = getAllPosts(["title", "date", "slug"]);
+  const posts: Post[] = getAllPosts(["title", "date", "slug", "draft"]);
   posts.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  const publishedPosts = posts.filter((post) => !post.draft);
+
   return (
     <>
-      {posts.reverse().map((post) => (
+      {publishedPosts.reverse().map((post) => (
         <div key={post.title}>
-          <Post post={post} />
+          <PostLink post={post} />
         </div>
       ))}
     </>

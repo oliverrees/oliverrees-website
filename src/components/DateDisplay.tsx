@@ -9,7 +9,7 @@ export const DateDisplay = ({ date, className }: DateProps) => {
   const parsedDate = new Date(date);
   return (
     <div className={"text-gray-400 text-sm mt-2 dark:text-white " + className}>
-      {format(parsedDate, "MM/dd/yyyy")}
+      {format(parsedDate, "dd/MM/yyyy")}
     </div>
   );
 };

@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { DateDisplay } from "@/components/DateDisplay";
+import { Post } from "@/lib/postType";
 
-type Items = {
-  [key: string]: string;
-};
-
-export const Post = ({ post }: { post: Items }) => {
+export const PostLink = ({ post }: { post: Post }) => {
   return (
     <div>
       <Link href={`/posts/${post.slug}`}>
