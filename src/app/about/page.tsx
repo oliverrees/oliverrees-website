@@ -22,8 +22,8 @@ const About = ({}) => {
           >
             OR/innovation
           </a>
-          , a company that helps people experience new mindsets and ways of
-          working.
+          , a company working on problems at the intersection of psychology and
+          technology.
         </div>
         <div className="text-base xl:text-lg mb-6">
           I speak about disruptive technology & innovation, and have a

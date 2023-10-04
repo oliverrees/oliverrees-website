@@ -1,5 +1,6 @@
+"use client";
 import dynamic from "next/dynamic";
-import React from "react";
+import { Loading } from "./Loading";
 
 interface Props {
   componentName: string;
@@ -10,6 +11,7 @@ const RenderComponent = ({ componentName }: Props) => {
     () => import(`../_post_components/` + componentName),
     {
       ssr: false,
+      loading: () => <Loading />,
     }
   );
 

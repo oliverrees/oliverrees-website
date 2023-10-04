@@ -17,19 +17,17 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <Container>
-      <main>
-        <div className="w-full mb-12">
-          <PostHeader post={post} />
-          {post.component ? (
-            <RenderComponent componentName={post.component} />
-          ) : (
-            <div
-              className="prose lg:prose-lg max-w-4xl dark:text-white"
-              dangerouslySetInnerHTML={{ __html: content }}
-            ></div>
-          )}
-        </div>
-      </main>
+      <div className="w-full mb-12">
+        <PostHeader post={post} />
+        {post.component ? (
+          <RenderComponent componentName={post.component} />
+        ) : (
+          <div
+            className="prose lg:prose-lg max-w-4xl dark:text-white"
+            dangerouslySetInnerHTML={{ __html: content }}
+          ></div>
+        )}
+      </div>
     </Container>
   );
 }
