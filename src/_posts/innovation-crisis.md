@@ -3,8 +3,8 @@ title: 'Innovation in Crisis: Why change is harder than ever'
 type: post
 draft: false
 date: 2023-10-18T00:00:00Z
-image: /img/posts/viable.jpg
-description: Everyone - at every level - recognises that a seismic shift is needed in the way that we work, live, sell, buy and consume. Yet the inertia is so great, so heavy, so overwhelming, that it's almost impossible to make any progress.
+image: /img/posts/solar.jpg
+description: Making innovation easier in a world of uncertainty and complexity
 ---
 
 Last week I was kindly asked to speak at the [Amsterdam Investor Forum](https://www.amsterdaminvestorforum.com/) about innovation in a world of uncertainty and complexity.
