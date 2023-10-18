@@ -30,8 +30,10 @@ const About = ({}) => {
           background in coding, marketing and psychology.
         </div>
         <div className="text-base xl:text-lg">
-          <a href="/contact">Send me an email</a> if you'd like to find out more
-          or just say hi..
+          <a href="/contact" className="underline md:hover:text-blue-700">
+            Send me an email
+          </a>{" "}
+          if you'd like to find out more or just say hi.
         </div>
       </div>
     </Container>

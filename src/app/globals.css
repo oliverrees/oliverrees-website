@@ -5,3 +5,8 @@
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
