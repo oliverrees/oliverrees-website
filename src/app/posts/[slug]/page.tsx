@@ -2,7 +2,6 @@ import { Container } from "@/components/Container";
 import { PostHeader } from "@/components/PostHeader";
 import RenderComponent from "@/components/RenderComponent";
 import { getPostBySlug } from "@/lib/getPostsInfo";
-import markdownToHtml from "@/lib/markdownToHtml";
 import { Post } from "@/lib/postType";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
@@ -14,10 +13,26 @@ export default async function Post({ params }: { params: { slug: string } }) {
     "date",
     "component",
     "content",
+    "description",
+    "image",
   ]);
 
   return (
     <Container>
+      <meta property="og:title" content={post.title} />
+      <meta
+        property="og:url"
+        content={`https://oliverrees.co.uk/posts/${params.slug}`}
+      />
+      {post.image && (
+        <meta
+          property="og:image"
+          content={`https://oliverrees.co.uk${post.image}`}
+        />
+      )}
+      {post.description && (
+        <meta property="og:description" content={post.description} />
+      )}
       <div className="w-full mb-12">
         <PostHeader post={post} />
         {post.component ? (

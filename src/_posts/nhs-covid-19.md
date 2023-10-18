@@ -2,6 +2,7 @@
 title: The COVID-19 NHS app is disruptive for all the wrong reasons
 type: post
 date: 2020-05-05T00:00:00Z
+draft: false
 ---
 
 My first introduction to the use of technology in the NHS was from a friend who had recently qualified as a doctor. As I’d try and excite her about the benefits of “disruptive” new health-tech apps, she’d reply, wearily, that they might have limited use in the hospital she was working at which was literally collapsing at the seams. Forget apps, she told me, basic life saving equipment would be much more useful.

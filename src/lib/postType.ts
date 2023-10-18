@@ -3,6 +3,8 @@ export interface Post {
   date: string;
   slug?: string;
   component?: string;
+  description?: string;
+  image?: string;
   content?: string;
   [key: string]: string | undefined;
 }
