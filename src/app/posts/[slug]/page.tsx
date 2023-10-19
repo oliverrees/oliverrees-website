@@ -38,7 +38,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         {post.component ? (
           <RenderComponent componentName={post.component} />
         ) : (
-          <div className="prose lg:prose-lg max-w-4xl dark:text-white prose-a:font-normal ">
+          <div className="prose lg:prose-lg max-w-4xl dark:text-white prose-a:font-normal dark:prose-a:text-white ">
             <Markdown
               rehypePlugins={[
                 rehypeRaw,

@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " dark:bg-black"}>
-        <div className="lg:w-96 md:w-48 h-20 md:h-auto fixed flex md:items-start md:min-h-screen md:bg-white dark:bg-black w-full md:flex-col dark:text-white justify-between bg-gray-100">
+        <div className="lg:w-96 md:w-48 h-20 md:h-auto fixed flex md:items-start md:min-h-screen md:bg-white md:dark:bg-black w-full md:flex-col dark:text-white justify-between bg-gray-100 dark:bg-black">
           <Link
             href="/"
             className=" md:hover:text-blue-700 text-black dark:text-white md:h-48 lg:h-96 "
