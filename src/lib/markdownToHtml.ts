@@ -1,6 +1,7 @@
 import { remark } from "remark";
 import html from "remark-html";
 import remarkEmbedder, { TransformerInfo } from "@remark-embedder/core";
+import remarkGfm from "remark-gfm";
 
 const YoutubeTransformer = {
   name: "Youtube",
@@ -21,6 +22,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(remarkEmbedder, {
       transformers: [YoutubeTransformer],
     })
+    .use(remarkGfm)
     .use(html)
     .process(markdown);
   return result.toString();

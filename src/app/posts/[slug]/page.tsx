@@ -2,10 +2,11 @@ import { Container } from "@/components/Container";
 import { PostHeader } from "@/components/PostHeader";
 import RenderComponent from "@/components/RenderComponent";
 import { getPostBySlug } from "@/lib/getPostsInfo";
-import { Post } from "@/lib/postType";
+import type { Post } from "@/lib/postType";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeExternalLinks from "rehype-external-links";
+import remarkGfm from "remark-gfm";
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const post: Post = getPostBySlug(params.slug, [
@@ -40,9 +41,10 @@ export default async function Post({ params }: { params: { slug: string } }) {
         ) : (
           <div className="prose lg:prose-lg max-w-4xl dark:text-white prose-a:font-normal dark:prose-a:text-white dark:prose-h1:text-white dark:prose-h2:text-white dark:prose-h3:text-white dark:prose-strong:text-white dark:prose-blockquote:text-white">
             <Markdown
+              remarkPlugins={[remarkGfm]}
               rehypePlugins={[
                 rehypeRaw,
-                [rehypeExternalLinks, { target: "new" }],
+                [rehypeExternalLinks, { target: "_blank" }],
               ]}
             >
               {post.content}
