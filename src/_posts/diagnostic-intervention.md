@@ -41,4 +41,4 @@ Having the same company provide the diagnostics and the intervention is not *alw
 
 If you've got supplements to sell, it's likely that the answer to most questions will be "you need to take supplements".
 
-This blurring of the line between diagnostic and intervention is not ideal for the consumer. I'm still not sure how you can trust a company that has a vested interest in the answer they give you. 
+This blurring of the line between diagnostic and intervention isn't ideal for the consumer. I'm still not sure how you can trust a company that has a vested interest in the answer they give you. 
