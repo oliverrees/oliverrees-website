@@ -2,7 +2,7 @@
 title: 'Seperating diagnostics and intervention'
 type: post
 date: 2024-06-11T00:00:00Z
-draft: true
+draft: false
 ---
 
 So much of life is problem solving. 
@@ -41,12 +41,4 @@ Having the same company provide the diagnostics and the intervention is not *alw
 
 If you've got supplements to sell, it's likely that the answer to most questions will be "you need to take supplements".
 
-This blurring of the line between diagnostic and intervention is a theme seen not just in consumer life, but in the business world too. More and more, the same organisations provide both the diagnostic and the intervention. 
-
-| Problem         | Diagnostic                                               | Intervention                                                              |
-| --------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Supply chain    | Audit by [McKinsey](https://www.mckinsey.com/)           | Lean manufacturing platform by [McKinsey](https://www.mckinsey.com/)      |
-| Product quality | Analysis by [Six Sigma](https://www.sixsigmaonline.org/) | Quality management system by [Six Sigma](https://www.sixsigmaonline.org/) |
-| Cybersecurity   | Assessment by [Symantec](https://www.symantec.com/)      | Security solutions by [Symantec](https://www.symantec.com/)               |
-
-In the world of accountancy, there are strict rules about these kinds of conflict of interest. Sarbanes-Oxley banned firms from providing audit and consultancy services to the same client. This is a similar, if specific, blurring of the lines between diagnostic and intervention.
+This blurring of the line between diagnostic and intervention isn't ideal for the consumer. I'm still not sure how you can trust a company that has a vested interest in the answer they give you.
