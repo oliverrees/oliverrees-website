@@ -1,5 +1,5 @@
 ---
-title: Seperating diagnostics and intervention
+title: Separating diagnostics and intervention
 type: post
 date: 2024-08-09T00:00:00Z
 draft: false
