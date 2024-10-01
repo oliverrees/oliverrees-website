@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <PlausibleProvider domain="oliverrees.co.uk">
         <body className={inter.className + " dark:bg-black"}>
-          <div className="lg:w-96 md:w-48 h-20 md:h-auto fixed flex md:items-start md:min-h-screen md:bg-white md:dark:bg-black w-full md:flex-col dark:text-white justify-between bg-gray-100 dark:bg-black">
+          <div className="lg:w-96 md:w-48 h-20 md:h-auto fixed z-0 flex md:items-start md:min-h-screen md:bg-white md:dark:bg-black w-full md:flex-col dark:text-white justify-between bg-gray-100 dark:bg-black">
             <Link
               href="/"
               className=" md:hover:text-blue-700 text-black dark:text-white md:h-48 lg:h-96 "
@@ -33,7 +33,7 @@ export default function RootLayout({
               <Navigation />
             </div>
           </div>
-          <div className="pt-32 md:ml-48 lg:ml-96 md:pt-0 flex flex-col">
+          <div className="pt-32 md:ml-48 lg:ml-96 md:pt-0 flex flex-col relative z-10">
             {children}
           </div>
         </body>
