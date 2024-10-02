@@ -2,7 +2,7 @@
 title: Building a plane origin screen
 type: post
 date: 2024-10-01T00:00:00Z
-draft: false
+draft: true
 ---
 
 **TL;DR** - Building a screen to show where a plane flying overhead has come from is fiddly but magical when it works. Read on for a guide to build a screen for yourself ([GitHub repo here](https://github.com/oliverrees/jetscreen)), or save some time & [buy a simpler, more accurate clock version.](https://jetclock.io)
