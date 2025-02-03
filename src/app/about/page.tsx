@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = ({}) => {
   return (
@@ -14,16 +15,15 @@ const About = ({}) => {
         />
         <div className="text-2xl font-bold mb-6">Hi, I'm Oliver.</div>
         <div className="text-base xl:text-lg mb-6">
-          I'm the founder of{" "}
-          <a
-            href="https://or-innovation.com"
+          I'm Head of AI and Innovation at&nbsp;
+          <Link
+            href="https://digi2al.com"
             target="new"
             className="underline md:hover:text-blue-700"
           >
-            OR/innovation
-          </a>
-          , a company working on problems at the intersection of psychology and
-          technology.
+            Digi2al
+          </Link>
+          , working on technology innovation projects in defence and security.
         </div>
         <div className="text-base xl:text-lg mb-6">
           I speak about disruptive technology & innovation, and have a

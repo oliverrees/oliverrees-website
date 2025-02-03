@@ -10,3 +10,10 @@ body {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
+
+blockquote {
+  background-color: #f9f9f9;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
