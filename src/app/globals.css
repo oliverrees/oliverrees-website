@@ -17,3 +17,9 @@ blockquote {
   padding-bottom: 0.5rem;
   padding-right: 0.5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    background-color: #333;
+  }
+}
