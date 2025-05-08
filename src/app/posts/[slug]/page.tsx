@@ -7,6 +7,7 @@ import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
+import MailingList from "./components/MailingList";
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const post: Post = getPostBySlug(params.slug, [
@@ -16,6 +17,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
     "content",
     "description",
     "image",
+    "showmailing",
   ]);
 
   return (
@@ -49,6 +51,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
             >
               {post.content}
             </Markdown>
+            {post.showmailing && <MailingList />}
           </div>
         )}
       </div>

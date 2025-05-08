@@ -23,7 +23,8 @@ const About = ({}) => {
           >
             Digi2al
           </Link>
-          , working on technology innovation projects in defence and security.
+          , working on technology innovation projects in defence and security
+          with a focus on maritime and the marine environment.
         </div>
         <div className="text-base xl:text-lg mb-6">
           I speak about disruptive technology & innovation, and have a
