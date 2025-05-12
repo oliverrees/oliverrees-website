@@ -57,7 +57,7 @@ Sitting at my desk watching the relentless queue of planes one day, I thought to
          alt="ADSB" className="w-full">
 </figure>
 
-The first problem to solve is figuring out if a plane is actually flying overhead. I could have just used an [unofficial FlightRadar24 API](https://github.com/JeanExtreme002/FlightRadarAPI), but the issues with these wrappers are that they are are against the [FlightRadar24 terms of service](https://www.flightradar24.com/blog/terms-of-service/) and may stop working at any time. As well as this, FlightRadar24 filters out sensitive military traffic and some private jets, so you won't get the full picture of what's flying overhead.
+The first problem to solve is figuring out if a plane is actually flying overhead. I could have just used an [unofficial FlightRadar24 API](https://github.com/JeanExtreme002/FlightRadarAPI), but the issues with these wrappers are that they are are against the [FlightRadar24 terms of service](https://www.flightradar24.com/terms-and-conditions) and may stop working at any time. As well as this, FlightRadar24 filters out sensitive military traffic and some private jets, so you won't get the full picture of what's flying overhead. 
 
 Luckily, under International Civil Aviation Organization (ICAO) regulations, all commercial aircraft must be equipped with an ADS-B (Automatic Dependent Surveillance–Broadcast) system. This broadcasts an aircraft's position (and some other data) up to several times a second. This signal is decodable by anyone with the right kind of aerial - and you can buy an aerial for next to nothing.
 
