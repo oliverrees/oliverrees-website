@@ -15,7 +15,7 @@ showmailing: true
         webkit-playsinline="true"
         playsInline
       >
-        <source src="/video/clock.mp4" type="video/mp4" />
+        <source src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/video/clock.mp4" type="video/mp4" />
       </video>
        <figcaption>A Korean Air plane from Seoul flying past my desk</figcaption>
 </figure>
@@ -33,7 +33,7 @@ I've lived in West London my whole life, mostly under the main flight path to Lo
 As well as being loud and polluting, there's something undeniably inspiring about a tin can hurtling through the air with hundreds of people inside. Planes are a visible emblem of the awesome achievement of the human race (and of our ultimate destruction too).
 
 <figure>
-    <img src="/img/posts/heathrow.jpg"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/heathrow.jpg"
          alt="Heathrow">
     <figcaption>Planes coming to LHR usually land in a westerly direction</figcaption>
 </figure>
@@ -45,7 +45,7 @@ Yes, I can (and often do) open FlightRadar24 to find out where the plane above m
 Sitting at my desk watching the relentless queue of planes one day, I thought to myself: what if a small screen could quietly announce the origin of each flight? Surely it can't be that difficult to build such a thing?
 
 <figure>
-    <img src="/img/posts/baflight.jpg"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/baflight.jpg"
          alt="ADSB" className="w-full">
          <figcaption>I basically just wanted to rip off this idea. Without the kid. And on my desk.</figcaption>
 </figure>
@@ -53,11 +53,11 @@ Sitting at my desk watching the relentless queue of planes one day, I thought to
 ### Building the screen
 
 <figure>
-    <img src="/img/posts/adsb.jpg"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/adsb.jpg"
          alt="ADSB" className="w-full">
 </figure>
 
-The first problem to solve is figuring out if a plane is actually flying overhead.
+The first problem to solve is figuring out if a plane is actually flying overhead. I could have just used an [unofficial FlightRadar24 API](https://github.com/JeanExtreme002/FlightRadarAPI), but the issues with these wrappers are that they are are against the [FlightRadar24 terms of service](https://www.flightradar24.com/blog/terms-of-service/) and may stop working at any time. As well as this, FlightRadar24 filters out sensitive military traffic and some private jets, so you won't get the full picture of what's flying overhead.
 
 Luckily, under International Civil Aviation Organization (ICAO) regulations, all commercial aircraft must be equipped with an ADS-B (Automatic Dependent Surveillance–Broadcast) system. This broadcasts an aircraft's position (and some other data) up to several times a second. This signal is decodable by anyone with the right kind of aerial - and you can buy an aerial for next to nothing.
 
@@ -74,7 +74,7 @@ Luckily you can buy a USB stick that not only collects the raw ADS-B signals of 
 Next, we need a device to process and store the data - I used the [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/). Setting up the FlightAware stick with a Raspberry Pi is really easy - [instructions are here](https://uk.flightaware.com/adsb/piaware/install).
 
 <figure>
-    <img src="/img/posts/adsbmap.jpg"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/adsbmap.jpg"
          alt="ADSB" className="w-full">
          <figcaption>This looks like FlightRadar, but there's a difference: it's our data!</figcaption>
 </figure>
@@ -176,7 +176,7 @@ flightroute: {
 Finally, we have the origin of the flight and can display it on our screen using a simple Next.js web app. There are loads of screens you could use to display this data. I used the [WaveShare 7.9in HDMI LCD](https://www.waveshare.com/wiki/7.9inch_HDMI_LCD) initially, but it would also work on a standard monitor. 
 
 <figure>
-    <img src="/img/posts/screendemo.gif"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/screendemo.gif"
          alt="JetScreen" className="w-full">
 </figure>
 
@@ -228,7 +228,7 @@ Initially I tried living with a window mounted version:
         webkit-playsinline="true"
         playsInline
       >
-        <source src="/video/clock2.mp4" type="video/mp4" />
+        <source src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/video/clock2.mp4" type="video/mp4" />
       </video>
       <figcaption>Window mounted prototype</figcaption>
 </figure>
@@ -236,7 +236,7 @@ Initially I tried living with a window mounted version:
 But I eventually settled on the familiar desk clock form factor. I also experimented with some different materials and finishes and didn't realise how expensive 3D printing was until I started using PA12 Nylon with a satin black finish.
 
 <figure>
-    <img src="/img/posts/clock.jpg"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/clock.jpg"
          alt="Heathrow">
     <figcaption>The finished design in Nylon</figcaption>
 </figure>
@@ -245,7 +245,7 @@ In parallel I set to work on integrating the APIs and data sources I'd discovere
 
 ```
 1. Request to /api with lat/lon and radius
-2. Get a list of all aircraft in range from ADSBHub
+2. Get a list of all aircraft in range from ADSBHub (or your own ADS-B station)
 3. If an aircraft is in range, retrieve the call sign
 4. See if this call sign is cached in the database (and updated within the last 3 months)
 5. If cached, return the route. If not cached, look up the call sign via hexdb.io
@@ -255,7 +255,7 @@ In parallel I set to work on integrating the APIs and data sources I'd discovere
 9. If FlightRadar24 doesn't return a route, return "unknown" and store the call sign in the database
 ```
 
-Finally, by combining the APIs and data sources above I was able to solve the call sign problem. The API now returns a flight number and routing information for almost every flight, and the data is updated in real time. And the good news is that less than 2% of flights need to be queried via FlightRadar24, keeping costs low. 
+Finally, by combining the APIs and data sources above I was able to solve the call sign problem. The API now returns a flight number and routing information for almost every flight, and the data is updated in real time. And the good news is that less than 2% of flights need to be queried via FlightRadar24, keeping costs low - and everything is compliant with their terms of service.
 
 Those lookups are then stored in a database. Ideally I'd be able to push the updated route to Jack or Josh.
 
@@ -264,7 +264,7 @@ Those lookups are then stored in a database. Ideally I'd be able to push the upd
 While I was fixing the fundamental issues, I managed to integrate npeezy's [extremely brilliant](https://www.reddit.com/r/homeautomation/comments/1ewt8v4/comment/lj20349/) suggestion of having an arrow that tracks towards the aircraft location as it moves. I also experimented with a few different clock faces, including moon phases and a weather display.
 
 <figure>
-    <img src="/img/posts/faces.jpg"
+    <img src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/img/posts/faces.jpg"
          alt="API Stages">
 </figure>
 
@@ -280,7 +280,7 @@ The weather ones ended up being my favourite, and when the planes are on easterl
         webkit-playsinline="true"
         playsInline
       >
-        <source src="/video/clockface1.mp4" type="video/mp4" />
+        <source src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/video/clockface1.mp4" type="video/mp4" />
       </video>
 </figure>
 <figure>
@@ -292,7 +292,7 @@ The weather ones ended up being my favourite, and when the planes are on easterl
         webkit-playsinline="true"
         playsInline
       >
-        <source src="/video/clockface2.mp4" type="video/mp4" />
+        <source src="https://gjfrdkwykkrxuxjdahip.supabase.co/storage/v1/object/public/oliverrees-site/video/clockface2.mp4" type="video/mp4" />
       </video>
 </figure>
 </div>
