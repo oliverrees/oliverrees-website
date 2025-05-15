@@ -22,4 +22,13 @@ blockquote {
   blockquote {
     background-color: #333;
   }
+
+  code,
+  th {
+    color: #f8f8f2 !important;
+  }
+
+  button {
+    background-color: #444 !important;
+  }
 }
