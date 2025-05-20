@@ -3,7 +3,7 @@ title: Building JetClock
 type: post
 date: 2025-05-12T00:00:00Z
 draft: false
-showmailing: true
+showmailing: false
 ---
 
 <figure>
@@ -22,7 +22,7 @@ showmailing: true
 
 **TL;DR** - A simple mission to write a guide for [some people on Reddit](https://www.reddit.com/r/homeautomation/comments/1ewt8v4/comment/lj0xwn2/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) on how to create a plane spotting screen led me down a deep ADS-B rabbit hole and ended with me building a clock.
 
-Read on for a guide to build a screen yourself ([GitHub repo here](https://github.com/oliverrees/jetscreen-v2)), or if you can't be bothered to source the components and run your own ADS-B station, I can send you a [kit with everything you need](#build) to set up a clock like the one above.
+Read on for a guide to build a screen yourself ([GitHub repo here](https://github.com/oliverrees/jetscreen-v2)), or if you can't be bothered to source the components and run your own ADS-B station, I can send you a [kit with everything you need](https://jetclock.io/products/jetclock-kit) to set up a clock like the one above.
 
 ---
 
@@ -311,8 +311,4 @@ All the code and instructions you need to set up a screen using your own ADS-B d
 
 ### Get the kit
 
-I can send you a kit with everything you need for the clock version, using the API that I built. You can assemble it in minutes and need no technical knowledge. 
-
-I'm not sure exactly how much it will cost (massively depends on how many 3D prints I can get done at once), but I'm hoping it will be less than £140/$180 which is roughly what I paid for the components and a year of FlightRadar24 lookups.
-
-If you're interested in a kit, leave your email below and I'll send through more details.
+I can send you a kit with everything you need for the clock version, using the API that I built. You can assemble it in minutes and need no technical knowledge. If you're interested in a kit, you can find it [here](https://jetclock.io/products/jetclock-kit).
